@@ -4,4 +4,4 @@ export default function handleResponseFromAPI(promise) {
     .then(() => stats)
     .catch(() => new Error())
     .finally(() => { console.log('Got a response from the API'); });
-} 
+}
