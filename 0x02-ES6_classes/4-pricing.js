@@ -1,9 +1,10 @@
-import Currency from './3-currency';
+// eslint-disable-next-line
+import Currency from "./3-currency";
 
 export default class Pricing {
   constructor(amount, currency) {
-    this._amount = amount;
-    this._currency = currency;
+    this.amount = amount;
+    this.currency = currency;
   }
 
   // amount getter
@@ -26,7 +27,6 @@ export default class Pricing {
     this._currency = value;
   }
 
-  // returns attributes in the following format amount currency_name (currency_code)
   displayFullPrice() {
     return `${this.amount} ${this.currency.displayFullCurrency()}`;
   }
