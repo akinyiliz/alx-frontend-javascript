@@ -2,9 +2,9 @@ export default function cleanSet(set, startString) {
   let result = '';
   const arr = [];
 
-  if (typeof startString === 'string') {
+  if (startString && typeof startString === 'string') {
     for (const element of set) {
-      if (element.startsWith(startString)) {
+      if (element && element.startsWith(startString)) {
         arr.push(element.slice(startString.length));
       }
     }
